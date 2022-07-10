@@ -1,0 +1,15 @@
+# Visual Studio Code files
+.vscode
+
+# tarining data
+trainImg
+
+#traget images
+target
+
+# train result
+model
+
+# python logs
+__pycache__
+log
