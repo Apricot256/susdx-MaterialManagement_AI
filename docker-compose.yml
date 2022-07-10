@@ -1,7 +1,13 @@
+version: '3'   
 services:
-  test:
-    image: nvidia/cuda:11.7.0-base-ubuntu22.04
-    command: nvidia-smi
+  machine-learning:
+    restart: always
+    build: .
+    container_name: 'machine-learning'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./opt:/root/opt
     deploy:
       resources:
         reservations:
@@ -9,3 +15,4 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
+    # command: /bin/bash
