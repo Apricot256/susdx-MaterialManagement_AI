@@ -16,13 +16,13 @@ coming soon...
 
 <p align="left"> 
     <a href="https://www.python.org/">
-    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /></a>　
+    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/></a>
     <a href="https://www.tensorflow.org/">
-    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" /></a>
+    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"/></a>
     <a href="https://opencv.org/">
-    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" /></a>
+    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"/></a>
     <a href="https://numpy.org/">
-    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" /></a>
-  <a href="https://www.docker.com/">
-    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" /></a>
+    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"/></a>
+    <a href="https://www.docker.com/">
+    <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/></a>
 </p>
