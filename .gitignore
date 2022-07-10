@@ -13,3 +13,6 @@ model
 # python logs
 __pycache__
 log
+
+#predict result
+output
