@@ -11,7 +11,7 @@ services:
       - ./list:/root/list   # moordinate list directory of items
       - ./trainImg:/root/trainImg   # the directory has train data 
       - ./target:/root/target   # the directory has target data for predict 
-      - ./output:/root/optput   # the directory willhave result 
+      - ./output:/root/output   # the directory willhave result 
       # - /etc/localtime:/etc/localtime:ro  #apply timezone(only Unix)
     deploy:
       resources:
