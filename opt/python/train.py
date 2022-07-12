@@ -76,15 +76,14 @@ if __name__ == '__main__':
     x_train, x_test, y_train, y_test = dataset.get_batch()
 
     trainer = Trainer(model)
-    trainer.train(x_train, y_train, batch_size = 16, epochs = 10, validation_split = 0.2) #best batch size is 8 or 16 ???
+    trainer.train(x_train, y_train, batch_size = 16, epochs = 20, validation_split = 0.2) #best batch size is 8 or 16 ???
 
     #model_arc_json = model.to_json()
     #open("./result/model_architecture.json","w").write(model_arc_json)
 
     score = model.evaluate(x_test, y_test)
 
-    model.save('/root/model/model.h5')
-    model.save_weights("/root/model/weights.hdf5")
+    model.save('/root/opt/model/model.h5')
 
     print("val loss = ",score[0])
     print("val accuracy = ",score[1])

@@ -12,19 +12,20 @@ from tensorflow_hub import KerasLayer
 
 # get now time
 dt_now = datetime.datetime.now()
-filename = '{:0>4}-{:0>2}-{:0>2}-{:0>2}'.format(dt_now.year, dt_now.month, dt_now.day, dt_now.hour)
-filename = '2022-07-10-15'
+dirname = '{:0>4}/{:0>2}/'.format(dt_now.year, dt_now.month)
+filename = '{:0>2}-{:0>2}-00'.format(dt_now.day, dt_now.hour)
+
 
 # open model and load weights
 model = load_model('/root/opt/model/model.h5', custom_objects={"KerasLayer": KerasLayer})
-print('time :', '\033[32m' + filename + '\033[0m')
+print('target :', '\033[32m' + dirname + filename + '.png\033[0m')
 model.summary()
 
 # import coordinate data
-cam_arr = json.load(open('/root/list/list.json', 'r'))['object_list']
+cam_arr = json.load(open('/root/storage/config/inference-new.json', 'r'))['object_list']
 
 # open target image
-image = Image.open('/root/target/' + filename + '.png')
+image = Image.open('/root/storage/storage/Image/testProject/1/' + dirname + filename + '.png')
 
 
 image_size = 128
@@ -76,6 +77,6 @@ for index, data in enumerate(cam_arr):
     print('')
 
 # save predict result
-with open('/root/output/result{}.json'.format(filename), 'w') as f:
+with open('/root/storage/inference/result{}.json'.format(filename), 'w') as f:
     json.dump(output, f, indent=4)
 print('The predict result is saved as {}.'.format('result-{}.json'.format(filename)))

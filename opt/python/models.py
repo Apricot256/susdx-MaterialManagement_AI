@@ -4,7 +4,7 @@ from tensorflow.keras.optimizers import Adam, SGD
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D
 from tensorflow.keras.layers import Activation, Flatten, Dropout, Dense
-from  tensorflow_hub import KerasLayer
+from tensorflow_hub import KerasLayer
 
 def getVGG16(input_shape, num_classes):
     model = Sequential()

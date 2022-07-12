@@ -52,7 +52,7 @@ class Dataset():
         Y = []
         image_size = 128
         for index, name in enumerate(['cover', 'zero', 'few', 'much']): 
-            files = glob.glob("./trainImg/categorized/" + name + "/*.jpg")
+            files = glob.glob("/root/storage/trainImg/categorized/" + name + "/*.jpg")
             for i, file in enumerate(files):
                 image = Image.open(file)
                 image = image.convert("RGB")

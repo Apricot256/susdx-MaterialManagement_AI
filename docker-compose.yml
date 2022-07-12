@@ -8,11 +8,8 @@ services:
     tty: true
     volumes:
       - ./opt:/root/opt   # main component
-      - ./list:/root/list   # moordinate list directory of items
-      - ./trainImg:/root/trainImg   # the directory has train data 
-      - ./target:/root/target   # the directory has target data for predict 
-      - ./output:/root/output   # the directory willhave result 
-      # - /etc/localtime:/etc/localtime:ro  #apply timezone(only Unix)
+      - /mnt0/Material-Management:/root/storage  # the directory has data
+      - /etc/localtime:/etc/localtime:ro  #apply timezone(only Unix)
     deploy:
       resources:
         reservations:
